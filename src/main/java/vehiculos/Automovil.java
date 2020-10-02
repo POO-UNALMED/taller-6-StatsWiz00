@@ -7,4 +7,12 @@ public class Automovil extends Vehiculo {
         super(placa, 4, 100, nombre, precio, peso, "Fwd", fabricante);
         this.puestos = puestos;
     }
+
+    public int getPuestos() {
+        return puestos;
+    }
+
+    public void setPuestos(int puestos) {
+        this.puestos = puestos;
+    }
 }
