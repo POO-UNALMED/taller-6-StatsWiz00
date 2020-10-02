@@ -1,1 +1,56 @@
-borrar
+El fabricante de autos
+
+Luego de tomarnos un respiro y seguir adelante, incursionamos en un nuevo área, los vehículos.
+Queremos entonces crear un software que lleve el control y modelado de la adquisición de autos
+por fabricantes, países, etc, para esto se le dieron ciertas indicaciones:
+
+ Se le pide en primer lugar crear las clases Automóvil, vehiculos.Camion, vehiculos.Camioneta, Vehículo,
+País y vehiculos.Fabricante. Automóvil, vehiculos.Camion, vehiculos.Camioneta heredan de Vehículo, en el paquete
+vehiculos.
+ Para la clase País tendrá un atributo nombre, donde almacenara el valor del nombre del
+país.
+ Para la clase vehiculos.Fabricante tendrá un atributo nombre y pais, donde almacenara el valor del
+nombre del fabricante y el país donde se le ubica a la fabrica.
+ Para la clase Vehículo tendrá un atributo placa donde se almacena el valor de la placa
+del vehiculo, un atributo puertas donde almacena la cantidad de estas, un atributo
+velocidadMaxima donde se especifica el valor máximo que alcanza el vehículo en su
+velocidad, un atributo nombre donde almacena el texto con el que llaman el vehiculo,
+el atributo precio almacena la cantidad necesaria para comprar el vehiculo, el atributo
+peso almacenara el valor del peso del vehiculo, el atributo tracción almacenara el
+texto del tipo de tracción que usa el vehiculo, por último el atributo fabricante que
+almacena el valor del fabricante del auto.
+ Para la clase Automóvil esta tendrá un atributo puestos donde almacenara la cantidad
+de puestos o asientos para personas, que el auto está permitido movilizar, además de
+que el valor para los atributos puertas, velocidadMaxima y tracción tomaran los
+siguientes valores cuando se crea un nuevo Automóvil 4, 100 y ”FWD”
+respectivamente.
+ Para la clase vehiculos.Camioneta esta tendrá un atributo volco donde se especifica si la
+camioneta tiene o no tiene volcó (use el atributo boolean), además de que el valor
+para los atributos velocidadMaxima y tracción tomaran los siguientes valores cuando
+se crea una nueva vehiculos.Camioneta 90 y ”4X4” respectivamente.
+ Para la clase vehiculos.Camion esta tendrá un atributo ejes donde se almacena la cantidad de
+ejes que el vehiculos.Camion, además de que el valor para los atributos puertas,
+velocidadMaxima y tracción tomaran los siguientes valores cuando se crea un nuevo
+vehiculos.Camion 2, 80 y ”4X2” respectivamente.
+Nota1: Cree los métodos get y set para los atributos de las clases, tenga en cuenta que
+cuando un valor es de tipo boolean el estándar para obtener el valor(get) se representa
+como isNombreAtributo, y cree los constructores con el orden de los parámetros sigue el
+mismo orden de los atributos.
+Nota2: Tenga en cuenta incluir los atributos de las clases que hereda en su constructor.
+ Cree un metodo llamado getCantidadVehiculos en la clase Vehículo que retornara el
+valor de la cantidad de vehículos que han sido creados.
+ Cree un metodo llamado vehiculosPorTipo en la clase Vehículo que retornara el
+cantidad de objetos creados por cada subclase de Vehículo, esta devolverá el valor
+siguiendo el siguiente formato:
+“Automoviles: #
+
+Camionetas: #
+Camiones: #”
+# es el número de objetos por cada subclase.
+ Por último cree las siguientes funcionalidades:
+o Cree un método llamado paisMasVendedor que se encargue de retornar el país
+que ha vendido(creado objetos asociados) más unidades entre todos los demás.
+o Cree un método llamado fabricaMayorVentas que se encargue de retornar la
+fábrica que ha vendido(creado objetos asociados) más unidades entre todas las
+demás.
+Nota: Piense en que clase deberían estar ubicados estos métodos.
