@@ -4,9 +4,8 @@ import java.util.ArrayList;
 
 public class Pais {
     private String nombre;
-    private ArrayList<Fabricante> lista = new ArrayList<Fabricante>();
+    private int numVehiculos = 0;
     private static ArrayList<Pais> paises = new ArrayList<Pais>();
-
     public Pais(String nombre) {
         this.nombre = nombre;
     }
@@ -17,5 +16,22 @@ public class Pais {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+    public void addVehiculo(){
+        numVehiculos ++;
+    }
+
+    public int getNumVehiculos() {
+        return numVehiculos;
+    }
+
+    public Pais paisMasVendedor(){
+        Pais maxPais = paises.get(0);
+        for (Pais pais: paises){
+            if (maxPais.getNumVehiculos() < pais.getNumVehiculos()){
+                maxPais= pais;
+            }
+        }
+        return maxPais;
     }
 }

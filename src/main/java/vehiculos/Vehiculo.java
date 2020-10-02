@@ -12,6 +12,7 @@ public class Vehiculo {
     private int peso;
     private String traccion;
     private Fabricante fabricante;
+    private static int cantidadVehiculos;
     private static ArrayList<Vehiculo> lista = new ArrayList<Vehiculo>();
 
 
@@ -24,15 +25,13 @@ public class Vehiculo {
         this.peso = peso;
         this.traccion = traccion;
         this.fabricante = fabricante;
+        fabricante.addVehiculo();
     }
 
     public Vehiculo(int velocidadMaxima, String traccion) {
         this.velocidadMaxima = velocidadMaxima;
         this.traccion = traccion;
         lista.add(this);
-    }
-    public int getCantidadVehiculos(){
-        return lista.size();
     }
 
     public String getPlaca() {
@@ -98,4 +97,16 @@ public class Vehiculo {
     public void setFabricante(Fabricante fabricante) {
         this.fabricante = fabricante;
     }
+
+    public static int getCantidadVehiculos() {
+        return cantidadVehiculos;
+    }
+
+    public static void setCantidadVehiculos(int cantidadVehiculos) {
+        Vehiculo.cantidadVehiculos = cantidadVehiculos;
+    }
+    public static String vehiculosPorTipo(){
+        return "Automoviles: " + Automovil.getCantidadAutos() + "\n" + "Camionetas: " + Camioneta.getCantidadCamionetas() + "\n" + "Camiones: " + Camion.getCantidadCamiones();
+    }
+
 }
