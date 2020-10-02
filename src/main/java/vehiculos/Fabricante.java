@@ -36,7 +36,7 @@ public class Fabricante {
         numVehiculos ++;
         this.pais.addVehiculo();
     }
-    public Fabricante fabricaMayorVentas(){
+    public static Fabricante fabricaMayorVentas(){
         Fabricante mayor = Fabricante.fabricantes.get(0);
         for (Fabricante fabricante: fabricantes){
             if(mayor.getNumVehiculos() < fabricante.getNumVehiculos()){

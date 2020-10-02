@@ -25,7 +25,7 @@ public class Pais {
         return numVehiculos;
     }
 
-    public Pais paisMasVendedor(){
+    public static Pais paisMasVendedor(){
         Pais maxPais = paises.get(0);
         for (Pais pais: paises){
             if (maxPais.getNumVehiculos() < pais.getNumVehiculos()){
