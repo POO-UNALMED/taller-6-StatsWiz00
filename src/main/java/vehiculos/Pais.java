@@ -11,10 +11,4 @@ public class Pais {
         this.nombre = nombre;
     }
 
-    public String paisMasVendedor(){
-        for (Pais pais: paises){
-            a=0
-            if (pais.totalAutos < pais.)
-        }
     }
-}

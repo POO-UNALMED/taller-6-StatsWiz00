@@ -14,13 +14,6 @@ public class Vehiculo {
     private Fabricante fabricante;
     private static ArrayList<Vehiculo> lista = new ArrayList<Vehiculo>();
 
-    public Vehiculo(int puertas, int velocidadMaxima, String traccion) {
-        this.puertas = puertas;
-        this.velocidadMaxima = velocidadMaxima;
-        this.traccion = traccion;
-        this.fabricante.lista.add(this);
-        lista.add(this);
-    }
 
     public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
         this.placa = placa;

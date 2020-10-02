@@ -28,6 +28,7 @@ respectivamente.
 camioneta tiene o no tiene volcó (use el atributo boolean), además de que el valor
 para los atributos velocidadMaxima y tracción tomaran los siguientes valores cuando
 se crea una nueva vehiculos.Camioneta 90 y ”4X4” respectivamente.
+
  Para la clase vehiculos.Camion esta tendrá un atributo ejes donde se almacena la cantidad de
 ejes que el vehiculos.Camion, además de que el valor para los atributos puertas,
 velocidadMaxima y tracción tomaran los siguientes valores cuando se crea un nuevo
