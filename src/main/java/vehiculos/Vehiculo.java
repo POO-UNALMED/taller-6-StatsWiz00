@@ -25,6 +25,7 @@ public class Vehiculo {
         this.peso = peso;
         this.traccion = traccion;
         this.fabricante = fabricante;
+        cantidadVehiculos ++;
         fabricante.addVehiculo();
     }
 
